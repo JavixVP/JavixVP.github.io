@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="estilos.css">
+  <title>Mis Gustos - Horario</title>
+</head>
+<body class="no-scroll">
+
+  <video autoplay muted loop id="bg-video">
+      <source src="code.mp4" type="video/mp4">
+      Tu navegador no soporta videos HTML5.
+  </video>
+
+  <header class="main-header">  
+    <div class="logo">
+      <div class="icon">J</div>
+      Javier Velasco
+    </div>
+    <nav>
+      <a href="index.html">Home page</a>
+        <a href="AboutMe.html">Personal Info</a>
+        <a href="Schedule.html">Personal Schedule</a>
+        <a href="CV.html">CV</a>
+      </nav>
+  </header>
+
+  
+  <main class="MisGustos-container">
+    <h1>My Schedule</h1>
+      <div class="table-wrapper">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Hora</th>
+              <th>Monday</th>
+              <th>Tuesday</th>
+              <th>Wednesday</th>
+              <th>Thursday</th>
+              <th>Friday</th>
+              <th>Saturday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="time-col">07:00-09:00</td>
+              <td></td><td></td><td></td><td></td>
+              <td rowspan="2" class="class-cell"><div class="course">Finance in Computer Engineering</div></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="time-col">09:00-11:00</td>
+              <td></td><td></td><td></td><td></td>
+              <td  rowspan="3" class="cpfi-cell">CPFI</td>
+            </tr>
+            <tr>
+              <td class="time-col">11:00-13:00</td>
+              <td></td><td></td><td></td>
+              <td class="class-cell"><div class="course">Microcomputers Lab</div></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="time-col">13:00-15:00</td>
+              <td class="class-cell"><div class="course">Lab. CGeIHC</div></td>
+              <td class="class-cell"><div class="course">CGeIHC</div></td><td></td>
+              <td class="class-cell"><div class="course">CGeIHC</div></td>
+              <td rowspan="2" class="class-cell"><div class="course">Professional Ethics</div></td>
+            </tr>
+            <tr>
+              <td class="time-col">15:00-17:00</td>
+              <td colspan="4" class="cpfi-cell">CPFI</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="time-col">17:00-19:00</td>
+              <td></td><td class="class-cell"><div class="course">Microcomputers</div></td>
+              <td></td>
+              <td class="class-cell"><div class="course">Microcomputers</div></td>
+              <td></td><td></td>
+            </tr>
+            <tr>
+              <td class="time-col">19:00-21:00</td>
+              <td class="class-cell"><div class="course">Secure Data Networks</div></td>
+              <td class="class-cell"><div class="course">Secure Data Networks</div></td>
+              <td class="class-cell"><div class="course">Secure Data Networks Lab</div></td>
+              <td class="class-cell"><div class="course">Secure Data Networks</div></td>
+              <td></td><td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </main>
+</body>
+</html>

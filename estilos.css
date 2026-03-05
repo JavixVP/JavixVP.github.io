@@ -1,0 +1,753 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+  html, body {
+    height: 100%;
+    overflow-y: auto; 
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+    color: #fff;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+
+  }
+
+  .MisGustos p{
+
+    padding-bottom: 30px;
+  }
+  
+  #bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+
+  opacity: 0.15; /* 🔹 Ajusta entre 0 y 1 */
+}
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1200px;
+
+    background-color: #0f0f0fc3;   /* 🔥 fondo */
+    padding: 12px 24px;
+    z-index: 10;
+}
+
+main.MisGustos {
+  padding-top: 80px;
+}
+
+.MisGustos .imagenes{
+  margin-left: 35%;
+}
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .logo .icon {
+    background-color: #40a7df;
+    border-radius: 50%;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.5rem;
+  }
+  nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+    font-weight: 600;
+  }
+  nav a:hover {
+    color:#40a7df;
+  }
+  .container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    max-width: 1200px;
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .intro
+  .profile-pic {
+    border: 6px solid #40a7df;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+  }
+
+  
+  .profile-pic {
+    border: 6px solid #40a7df;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+  }
+
+  
+  
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .intro {
+    max-width: 600px;
+  }
+  .intro h3 {
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+  }
+  
+  .intro h4 {
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+  }
+
+  .intro h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #40a7df;
+    margin-bottom: 1rem;
+  
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #40a7df;
+    display: inline-block;
+  
+    animation: escribir 3s steps(30) 1s infinite alternate, parpadeo 0.7s step-end infinite;
+  }
+  
+  @keyframes escribir {
+    from {
+      width: 0;
+    }
+    to {
+      width: 22ch; 
+    }
+  }
+  
+  @keyframes parpadeo {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  .intro p {
+    color: #bbb;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+  .buttons a {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #40a7df;
+    border-radius: 25px;
+    margin-right: 1rem;
+    font-weight: 500;
+    transition: background 0.3s, color 0.3s;
+  }
+  .buttons a:first-child {
+    background-color: #40a7df;
+    color: white;
+  }
+  .buttons a:hover {
+    background-color: white;
+    color: #40a7df;
+  }
+  .socials {
+    margin-top: 2rem;
+  }
+  .socials a {
+    color: #ccc;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  .socials a:hover {
+    color: #40a7df;
+  }
+
+
+  .sobremi {
+    text-align: center;
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .sobremi h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    
+  }
+
+.neon-text {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 5px #40a7df, 0 0 10px #40a7df, 0 0 20px #40a7df, 0 0 40px #40a7df, 0 0 80px #40a7df;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #40a7df, 0 0 10px #40a7df, 0 0 20px #40a7df, 0 0 40px #40a7df, 0 0 80px #40a7df;
+    }
+    100% {
+        text-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 40px #000000, 0 0 80px #000000, 0 0 160px #000000;
+    }
+}
+  
+  .sobremi .image-box {
+    width: 500px;
+    height: 350px;
+    margin: 0 auto 2rem;
+    border: 4px solid transparent;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+  }
+  
+  .sobremi .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .sobremi p {
+    font-size: 1.2rem;
+    color: #ccc;
+    text-align: justify;
+  }
+
+  
+.gustos-table {
+  width: 90%;
+  
+}
+
+.gustos-table {
+  width: 90%;
+  
+}
+
+.gustos-table td {
+  padding: 16px;
+  justify-content:space-between
+}
+
+.imagenes img {
+  width: 100px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.texto {
+  text-align: left;
+}
+
+.texto h3 {
+  margin-bottom: 8px;
+}
+
+.texto p {
+  line-height: 1.6;
+}
+
+.spacer {
+  height: 30px;
+}
+
+  .MisGustos {
+    height: 100vh;
+    padding: 2rem;
+  }
+ .gusto-card {
+  display: flex;
+  width: 550px;
+  height: 230px;
+  align-items: flex-start;
+  background-color: rgba(117, 207, 255, 0.2);
+  border: 3px solid #40a7df;
+  border-radius: 16px;
+  overflow: hidden;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  gap: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* CONTENEDOR DE IMÁGENES (RESERVA ESPACIO) */
+.gusto-card .imagenes {
+  position: relative;        /* 🔑 CLAVE */
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+/* IMÁGENES (ANIMACIÓN) */
+.gusto-card .imagenes img {
+  position: absolute;
+  inset: 0;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  opacity: 0;
+  animation: cambiar 6s infinite;
+}
+
+/* PRIMERA VISIBLE */
+.gusto-card .imagenes img:first-child {
+  opacity: 1;
+}
+
+/* TIEMPOS */
+.gusto-card .imagenes img:nth-child(1) { animation-delay: 0s; }
+.gusto-card .imagenes img:nth-child(2) { animation-delay: 2s; }
+.gusto-card .imagenes img:nth-child(3) { animation-delay: 4s; }
+
+/* ANIMACIÓN */
+@keyframes cambiar {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  30%  { opacity: 1; }
+  40%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* TEXTO */
+.gusto-card .texto {
+  padding: 1rem;
+  color: #ccc;
+  text-align: justify;
+}
+
+.gusto-card .texto h3 {
+  color: #40a7df;
+  margin-bottom: 0.3rem;
+}
+
+/* POSICIONES */
+.inferior-izquierda {
+  bottom: 65px;
+  left: 150px;
+}
+
+.inferior-derecha {
+  bottom: 65px;
+  right: 150px;
+}
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #121212;
+    font-family: 'Arial', sans-serif;
+}
+
+.shadow-dance-text {
+    font-size: 2.5rem;
+    color: #40a7df;
+    text-shadow: 5px 5px 0 #ffffff, 10px 10px 0 #ffffff;
+    animation: shadow-dance 2s infinite;
+}
+
+@keyframes shadow-dance {
+    0%, 100% {
+        text-shadow: 5px 5px 0 #ffffff, 10px 10px 0 #ffffff;
+    }
+    50% {
+        text-shadow: -5px -5px 0 #ffffff, -10px -10px 0 #ffffff;
+    }
+}
+
+section {
+  display: flex;
+  width: 1200px;
+  height: 830px;
+  margin: 50px auto;
+  gap: 5px;
+}
+
+section a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: transform 0.5s ease, opacity 0.5s ease, filter 0.5s ease;
+}
+
+section a:hover img {
+  transform: scale(1.1); /* Hace zoom sin mover el layout */
+  opacity: 1;
+  filter: contrast(120%);
+  cursor: crosshair;
+}
+
+.overlay span {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 1.2em;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+section a:hover span {
+  opacity: 1;
+}
+
+.MisGustos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centra horizontalmente todo */
+  padding-top: 2rem;
+}
+
+.MisGustos h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.MisGustos .profile-pic {
+  width: 150px;
+  height: 150px;
+}
+
+
+
+.gustos-text {
+  max-width: 1100px;      /* limita el ancho */
+  margin-top: 1rem;
+  text-align: justify;   /* texto alineado */
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.8;
+}
+
+/* ===== CONTENEDOR DEL HORARIO ===== */
+.MisGustos-container {
+  width: 100;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Wrapper para permitir scroll horizontal */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+/* ===== TABLA ===== */
+.schedule-table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: separate;
+  border-spacing: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  color: white;
+}
+
+/* Encabezados */
+.schedule-table th {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Celdas */
+.schedule-table td {
+  height: 65px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  transition: background 0.3s ease;
+  vertical-align: middle;
+}
+
+/* Fuerza columnas del mismo tamaño */
+.schedule-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* Todas las columnas iguales */
+.schedule-table th,
+.schedule-table td {
+  width: calc(100% / 7);
+}
+
+/* Columna de hora un poco más angosta */
+.schedule-table .time-col {
+  width: 100px;
+}
+
+/* Hover */
+.schedule-table td:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Columna hora */
+.time-col {
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: center;
+  width: 120px;
+}
+
+/* Clases normales */
+.class-cell {
+  background: rgba(0, 150, 255, 0.25) !important;
+  border-left: 4px solid #00d2ff;
+}
+
+/* CPFI */
+.cpfi-cell {
+  background: rgba(255, 165, 0, 0.25) !important;
+  border-left: 4px solid #ffa500;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Texto del curso */
+.course {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .schedule-table {
+    min-width: 700px;
+  }
+}
+
+.MisGustos-container h1 {
+  text-align: center;
+}
+
+/* Estilo para el contenedor que tiene la foto y los datos básicos */
+
+/* EL CONTENEDOR PRINCIPAL (Efecto Cristal) */
+.cv-container.static-mode {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%; 
+    max-width: 1200px;
+    height: 80vh;/* Altura fija */
+   
+    
+    /* Efecto Vidrio (Glassmorphism) */
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(15px); /* Desenfoque del fondo */
+    -webkit-backdrop-filter: blur(15px);
+    
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+    z-index: 10;
+    
+}
+
+
+
+
+#colspan {
+    text-align: center;
+    padding: 20%;
+}
+
+#colspan img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #40a7df;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+#colspan h4 {
+    font-size: 1.4rem;
+    color: #40a7df;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#colspan p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #ffffff; /* Texto oscuro para la sidebar clara */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Barras de Progreso (Skills) */
+.load, .load2, .load3, .load4 {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 18px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress, .progress2, .progress3, .progress4 {
+    background: linear-gradient(90deg, #40a7df, #2c3e50);
+    height: 100%;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+/* Redes Sociales */
+#colspan a {
+    text-decoration: none;
+    color: #40a7df;
+    font-size: 1.5rem;
+    margin: 0 8px;
+    transition: transform 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+#colspan a:hover {
+    color: #40a7df;
+    transform: translateY(-3px);
+}
+
+/* Contenido de Educación y Experiencia */
+.container-padding {
+    width:1400px;
+    height: auto;
+    padding: 10px 0;
+    
+}
+
+ .padding-bottom {
+    width:700px;
+    height: auto;
+    padding: 20px 0;
+}
+
+.content1, .content2, .content3 {
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.content1 p, .content2 p, .content3 p {
+     justify-content: space-evenly;
+}
+
+.content1 h2, .content1 h3, .content2 h3, .content3 h3 {
+    margin: 5px 0;
+}
+
+.content1 h2 {
+    color: #40a7df;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #40a7df;
+    display: inline-block;
+    margin-bottom: 15px;
+    
+}
+
+.content1 h3, .content2 h3, .content3 h3 {
+    font-size: 1.1rem;
+    color: #96c6f6;
+}
+
+.content1 h4, .content2 h4, .content3 h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+/* Iconos de calendario y otros */
+.fa-fw {
+    color: #40a7df;
+    margin-right: 8px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+.skills {
+  padding-left: 40px; /* sangría */
+}
