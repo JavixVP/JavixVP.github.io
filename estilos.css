@@ -93,7 +93,7 @@ main.MisGustos {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 6rem;
     max-width: 1200px;
     width: 100%;
     flex-grow: 1;
@@ -616,6 +616,7 @@ section a:hover span {
     overflow: hidden;
     box-shadow: 0 25px 50px rgba(0,0,0,0.5);
     z-index: 10;
+    overflow-y: auto; 
     
 }
 
@@ -624,7 +625,7 @@ section a:hover span {
 
 #colspan {
     text-align: center;
-    padding: 20%;
+    padding: 10%;
 }
 
 #colspan img {
